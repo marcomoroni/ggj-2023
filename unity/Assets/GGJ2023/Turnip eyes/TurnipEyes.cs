@@ -4,6 +4,12 @@ namespace GGJ2023
 {
     public class TurnipEyes : MonoBehaviour
     {
+        public enum EyeStyle {
+            Default,
+            Close,
+            O,
+        }
+
         [SerializeField]
         private GameObject heightPivot;
         [SerializeField]
@@ -32,6 +38,12 @@ namespace GGJ2023
         private float scale;
         [SerializeField]
         private float eyeRotation;
+        [SerializeField]
+        private Texture2D textureDefault;
+        [SerializeField]
+        private Texture2D textureClose;
+        [SerializeField]
+        private Texture2D textureO;
 
         private void OnValidate()
         {
@@ -50,7 +62,25 @@ namespace GGJ2023
             rightAnglePivot.transform.localRotation = Quaternion.Euler(0, -angleBetweenEyes / 2, 0);
             rightRadiusPivot.transform.localPosition = new Vector3(0, 0, -radius);
             rightScalePivot.transform.localScale = new Vector3(scale, scale, scale);
-            rightEyeRotationPivot.transform.localRotation = Quaternion.Euler(0, 0, eyeRotation);
+            rightEyeRotationPivot.transform.localRotation = Quaternion.Euler(0, 0, 180 + eyeRotation);
+        }
+
+        public void SetEyeStyle(EyeStyle style)
+        {
+            foreach(var mrs in GetComponentsInChildren<MeshRenderer>())
+            {
+                var texture = textureDefault;
+                switch(style)
+                {
+                    case EyeStyle.Close:
+                        texture = textureClose;
+                        break;
+                    case EyeStyle.O:
+                        texture = textureO;
+                        break;
+                }
+                mrs.material.SetTexture("Texture", texture);
+            }
         }
     }
 }

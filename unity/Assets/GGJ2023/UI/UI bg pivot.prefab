@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2319678646152125004}
-  - component: {fileID: 8373538979991403181}
+  - component: {fileID: 236124579026367116}
   m_Layer: 0
   m_Name: UI bg pivot
   m_TagString: Untagged
@@ -278,7 +278,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &8373538979991403181
+--- !u!111 &236124579026367116
 Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,8 +287,9 @@ Animation:
   m_GameObject: {fileID: 7587360220674747609}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 1ab51f01f4aaf3d4ababd99f9e9d4504, type: 2}
+  m_Animation: {fileID: 7400000, guid: 7cfd36f12368e6740bdfb7ba2ab72a88, type: 2}
   m_Animations:
+  - {fileID: 7400000, guid: 7cfd36f12368e6740bdfb7ba2ab72a88, type: 2}
   - {fileID: 7400000, guid: 1ab51f01f4aaf3d4ababd99f9e9d4504, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0

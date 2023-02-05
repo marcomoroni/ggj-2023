@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5808633241935677231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5808633241935677225}
+  - component: {fileID: 5808633241935677230}
+  m_Layer: 0
+  m_Name: GameplayTurnip (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5808633241935677225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808633241935677231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5125607735715040901}
+  - {fileID: 8395523141517524845}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5808633241935677230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808633241935677231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3693ce7633eede4458078695bab61e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 1534751935637910487}
+  height: {fileID: 8395523141517524845}
+  animation: {fileID: 84263288858716410}
+  bodyMR: {fileID: 1760663687397976633}
+  colourCombinations: {fileID: 11400000, guid: 999e5adfe8989844e8c1d2de668568b8, type: 2}
+--- !u!1 &6438468596911763869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8395523141517524845}
+  m_Layer: 0
+  m_Name: height
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8395523141517524845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438468596911763869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5808633241935677225}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5808633240417194181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5808633241935677225}
+    m_Modifications:
+    - target: {fileID: 1710726001926725184, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710726001926725184, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+--- !u!4 &5125607735715040901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1710726001926725184, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+  m_PrefabInstance: {fileID: 5808633240417194181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1534751935637910487 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5030769175079789330, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+  m_PrefabInstance: {fileID: 5808633240417194181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &84263288858716410 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 5888232400681465919, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+  m_PrefabInstance: {fileID: 5808633240417194181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1760663687397976633 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5256628080891329276, guid: 626afb977b2e80f49b198bbba12686e6, type: 3}
+  m_PrefabInstance: {fileID: 5808633240417194181}
+  m_PrefabAsset: {fileID: 0}
