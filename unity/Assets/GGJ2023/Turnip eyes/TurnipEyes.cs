@@ -62,7 +62,7 @@ namespace GGJ2023
             rightAnglePivot.transform.localRotation = Quaternion.Euler(0, -angleBetweenEyes / 2, 0);
             rightRadiusPivot.transform.localPosition = new Vector3(0, 0, -radius);
             rightScalePivot.transform.localScale = new Vector3(scale, scale, scale);
-            rightEyeRotationPivot.transform.localRotation = Quaternion.Euler(0, 0, 180 + eyeRotation);
+            rightEyeRotationPivot.transform.localRotation = Quaternion.Euler(0, 180, -eyeRotation);
         }
 
         public void SetEyeStyle(EyeStyle style)
