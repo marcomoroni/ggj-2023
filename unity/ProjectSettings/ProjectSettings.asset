@@ -591,6 +591,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     1: SHAPES_URP
+    13: SHAPES_URP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
